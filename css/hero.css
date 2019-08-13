@@ -1,0 +1,139 @@
+#hero {
+    background-image: url("../imgs/hero-bg.jpg");
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding-top: 30vh;
+    color: white;
+}
+#hero .mask {
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    opacity: 0.54;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.hero-header {
+    z-index: 1;
+    font-family: "Lato", sans-serif;
+    max-width: none;
+}
+
+.hero-header h1 {
+    /*line-height: 100px;*/
+    margin-bottom: 63px;
+    font-weight: bold;
+    font-size: 64px;
+    letter-spacing: 24px;
+}
+
+.hero-header h3 {
+    opacity: 0.5;
+    font-family: "Montserrat", sans-serif;
+    font-size: 29px;
+}
+.hero-header h3.date {
+    opacity: 1;
+    font-size: 33px;
+    letter-spacing: 26px;
+}
+
+.btn-reg {
+    z-index: 1;
+    width: 20%;
+    margin: auto;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1.5px solid white;
+    padding: 0.8rem;
+}
+
+.btn-reg:hover {
+    background: white;
+}
+
+/*Next Button Module*/
+/********************************/
+.btn-next {
+    z-index: 1;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    margin-bottom: 15px;
+
+    transform: rotate(-45deg);
+
+}
+
+.btn-next .box {
+    width: 12px;
+    height: 12px;
+    margin: auto;
+
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+
+    -webkit-transform: translate(-5px, 5px);
+    -moz-transform: translate(-5px, 5px);
+    -ms-transform: translate(-5px, 5px);
+    -o-transform: translate(-5px, 5px);
+    transform: translate(-5px, 5px);
+}
+
+.btn-next:hover {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.btn-next:hover .box {
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    animation-iteration-count: initial;
+}
+
+.btn-next .box {
+    animation-name: chake;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes chake {
+    0% {
+
+        -webkit-transform: translate(-5px, 5px);
+        -moz-transform: translate(-5px, 5px);
+        -ms-transform: translate(-5px, 5px);
+        -o-transform: translate(-5px, 5px);
+        transform: translate(-5px, 5px);
+    }
+    50% {
+
+        -webkit-transform: translate(5px, -5px);
+        -moz-transform: translate(5px, -5px);
+        -ms-transform: translate(5px, -5px);
+        -o-transform: translate(5px, -5px);
+        transform: translate(5px, -5px);
+    }
+    100% {
+
+        -webkit-transform: translate(-5px, 5px);
+        -moz-transform: translate(-5px, 5px);
+        -ms-transform: translate(-5px, 5px);
+        -o-transform: translate(-5px, 5px);
+        transform: translate(-5px, 5px);
+    }
+
+
+}

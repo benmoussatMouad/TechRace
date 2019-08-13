@@ -1,0 +1,34 @@
+#main-header {
+    padding: 49px 49px 0 49px;
+    z-index: 1;
+}
+
+#main-header img {
+    max-width: 10%;
+    /*fixing an issue with position*/
+    transform: translateY(-40%);
+}
+
+#main-header .nav {
+    size: 20px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#main-header .nav .nav-item {
+    opacity: 0.5;
+    padding: 1px;
+    text-transform: uppercase;
+}
+
+#main-header .nav .nav-item:hover {
+    opacity: 1;
+}
+
+#main-header .nav .nav-item.active {
+    border-bottom: 2px solid white;
+    opacity: 1;
+}
+
