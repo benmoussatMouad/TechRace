@@ -10,9 +10,22 @@ a, a:hover {
 * {
     box-sizing: border-box;
 }
+*:before, *:after {
+    display: none;
+}
 body {
     margin: 0;
     padding: 0;
+    background: #000;
     font-family: "Open Sans", sans-serif;
 }
 
+html {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+
+    /*Trying to fix the overflow when reading with chrome*/
+    width: 100vw;
+    overflow-x: hidden;
+}
